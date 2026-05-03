@@ -1,0 +1,35 @@
+{
+  "name": "interior-design-ai",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^15.3.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "better-sqlite3": "^11.9.1",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "swr": "^2.3.3",
+    "lucide-react": "^0.546.0",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/uuid": "^10.0.0",
+    "typescript": "^5.8.2",
+    "tailwindcss": "^4.1.14",
+    "@tailwindcss/postcss": "^4.1.14",
+    "postcss": "^8.5.3"
+  }
+}
