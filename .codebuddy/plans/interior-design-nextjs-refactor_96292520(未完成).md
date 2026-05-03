@@ -34,47 +34,47 @@ design:
 todos:
   - id: init-nextjs
     content: 初始化 Next.js 项目，安装依赖（better-sqlite3, swr, lucide-react, bcryptjs, jsonwebtoken, @serwist/next, tailwindcss），配置 tsconfig 和 tailwind 主题
-    status: pending
+    status: completed
   - id: setup-mvc-db
     content: 搭建完整 MVC 目录结构，初始化 SQLite (WAL模式)，创建 7 张数据表 DDL，编写各 Model 的 CRUD 函数
-    status: pending
+    status: completed
     dependencies:
       - init-nextjs
   - id: setup-theme-swr
     content: 创建 CSS Variables 主题系统（theme.css/globals.css），配置 SWR 全局 Provider 和 localStorage 持久化方案
-    status: pending
+    status: completed
     dependencies:
       - init-nextjs
   - id: build-ui-kit
     content: 构建 12 个基础 UI 组件：Skeleton, LazyImage, Button, Input, Card, Modal, Select, Badge, Avatar, Dropzone, Pagination, Toast
-    status: pending
+    status: completed
     dependencies:
       - setup-theme-swr
   - id: build-layout-auth
     content: 构建全局布局（Header/Footer/响应式导航），实现用户认证系统（register/login/JWT/logout/me），创建登录注册页面
-    status: pending
+    status: completed
     dependencies:
       - build-ui-kit
       - setup-mvc-db
   - id: build-credits-orders
     content: 实现积分系统（余额查询/明细日志/充值订单创建/扣减事务），创建充值页面和订单记录页
-    status: pending
+    status: completed
     dependencies:
       - build-layout-auth
   - id: build-ai-service
     content: "[subagent:code-explorer] 构建 AI 服务层（双模型编排nano-banana-2+gpt-image-2-all），移植23种预设风格库，创建POST /api/tools/generate 接口"
-    status: pending
+    status: completed
     dependencies:
       - setup-mvc-db
   - id: port-tool-pages
     content: "[subagent:code-explorer] 移植 6 大 AI 工具页面（通过 UploadZone/ResultPanel 公共组件）和收藏夹，参考现有 Vue 组件的 prompt 逻辑和交互细节"
-    status: pending
+    status: completed
     dependencies:
       - build-ai-service
       - build-ui-kit
   - id: build-admin
     content: 构建后台管理系统：仪表盘统计、用户管理（搜索/分页/积分调整）、模型配置CRUD+测试连接、工具配置绑定、系统设置
-    status: pending
+    status: completed
     dependencies:
       - build-layout-auth
       - build-ui-kit
